@@ -1,6 +1,5 @@
 {
-  "name": "@base/common",
+  "name": "lybrid-common",
   "version": "1.0.0",
-  "author": "levanduandut@gmail.com",
-  "main": "index.tsx"
+  "author": "levanduandut@gmail.com"
 }

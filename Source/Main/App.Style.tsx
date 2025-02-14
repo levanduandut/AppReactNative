@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Constants } from '@base/common'
+import { Constants } from 'lybrid-common'
 
 export default StyleSheet.create({
   sectionContainer: {
