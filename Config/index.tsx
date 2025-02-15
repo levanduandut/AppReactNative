@@ -5,7 +5,7 @@ import fonts from "./fonts"
 const Config: SrcConfig = {
     Color: {
         Common: {
-            main_Background: "#ffffff",
+            main_background: "#ffffff",
             main_text: "#000000",
             sec_text: "#ffffff",
             primary_color: "#000091",
@@ -15,12 +15,12 @@ const Config: SrcConfig = {
             placeholder_color: "#667085",
             border_checkbox: "#D0D5DD",
             line_color: "#E4E7EC",
-            error_color: "#FF0000"
+            error_color: "#FF0000",
         }
     },
     Icon: {
         Common: {
-
+            ic_back: require("./image/ic_back.png"),
         },
         Role: {
             role_institution: require("./image/role_institution.png"),
@@ -42,6 +42,10 @@ const Config: SrcConfig = {
             ic_find: require("./image/home_find.png"),
             ic_next: require("./image/home_next.png"),
             ic_avatar_default: require("./image/home_avatar_test.png"),
+        },
+        FindInter: {
+            ic_pin: require("./image/find_pin.png"),
+            ic_note: require("./image/find_note.png"),
         }
     },
 }

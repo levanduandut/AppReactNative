@@ -32,7 +32,16 @@ class Languages {
       'home.plan': 'Planifier pour plus tard',
       'home.find': 'Trouver un interprète',
       'home.mission':'Missions en cours et à venir',
-      'home.history':'Missions précédentes'
+      'home.history':'Missions précédentes',
+
+      //Find inter
+      'find.inter.title': 'Trouver un interprète',
+      'find.inter.content': 'Obtenez un interprète immédiatement.',
+      'find.inter.language': 'Langues',
+      'find.inter.location': 'Localisation',
+      'find.inter.description': 'Description de la mission',
+      'find.inter.description.placeholder': 'Decrivez la mission',
+      'find.inter.search': 'Recherche un interprète',
     },
     vi: {},
     en: {},

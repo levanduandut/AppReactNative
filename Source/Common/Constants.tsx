@@ -34,6 +34,11 @@ export const TYPEROLE = {
   INTERPRETER: "INTERPRETER"
 };
 
+export const TYPE_LOCATION = {
+  Distanciel: "Distanciel",
+  Présentiel: "Présentiel"
+};
+
 export const Screen = {
     Role: "Role" as const,
     SignIn: "SignIn" as const,
@@ -46,6 +51,7 @@ export default {
   COLORS,
   FONTFAMILY,
   TYPEROLE,
+  TYPE_LOCATION,
   Screen,
   Account: {
     INSTITUTION : {
