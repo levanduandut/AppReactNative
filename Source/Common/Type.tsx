@@ -3,7 +3,7 @@ import { ColorValue, ImageSourcePropType } from "react-native"
 export interface SrcConfig {
     Color: {
         Common: {
-            main_Background: ColorValue
+            main_background: ColorValue
             main_text: ColorValue
             sec_text: ColorValue
             primary_color: ColorValue
@@ -18,7 +18,7 @@ export interface SrcConfig {
     }
     Icon: {
         Common: {
-
+            ic_back: ImageSourcePropType
         }
         Role: {
             role_institution: ImageSourcePropType
@@ -40,6 +40,10 @@ export interface SrcConfig {
             ic_find: ImageSourcePropType
             ic_next: ImageSourcePropType
             ic_avatar_default: ImageSourcePropType
+        }
+        FindInter: {
+            ic_pin: ImageSourcePropType
+            ic_note: ImageSourcePropType
         }
     }
 }
