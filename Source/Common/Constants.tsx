@@ -1,21 +1,60 @@
-import { Dimensions, PixelRatio } from "react-native";
+import Config from "../../Config";
 
-// Lấy kích thước màn hình hiện tại
-const { width, height } = Dimensions.get("window");
-
-const scaleFont = (size: number) => {
-  const standardScreenHeight = 812;
-  return Math.round(PixelRatio.roundToNearestPixel(size * (height / standardScreenHeight)));
+export const FONT_SIZES = {
+  SMALL: 12,
+  MEDIUM: 14,
+  NORMAL: 16,
+  MIDDLE: 22,
+  LARGE: 28,
+  XLARGE: 34,
 };
 
-// Định nghĩa FONT_SIZES
-export const FONT_SIZES = {
-  SMALL: scaleFont(12),
-  MEDIUM: scaleFont(16),
-  LARGE: scaleFont(20),
-  XLARGE: scaleFont(24),
+export const COLORS = {
+  primaryColor: Config.Color.Common.primary_color,
+  titleColor: Config.Color.Common.title_color,
+  greyColorBg: Config.Color.Common.grey_color_background,
+  greyText: Config.Color.Common.grey_text,
+  placeholder: Config.Color.Common.placeholder_color,
+  lineColor: Config.Color.Common.line_color,
+  mainText: Config.Color.Common.main_text,
+  secText: Config.Color.Common.sec_text,
+  errorColor: Config.Color.Common.error_color
+};
+
+export const FONTFAMILY = {
+  titleFont: Config.Font.fontKumbhSansSemiBold,
+  secordFont: Config.Font.fontGilroyBold,
+  mainText400: Config.Font.fontDMSans400,
+  mainText500: Config.Font.fontDMSans500,
+  mainText700: Config.Font.fontDMSans700
+};
+
+export const TYPEROLE = {
+  INSTITUTION: "INSTITUTION",
+  INTERPRETER: "INTERPRETER"
+};
+
+export const Screen = {
+    Role: "Role" as const,
+    SignIn: "SignIn" as const,
+    Home: "Home" as const,
+    FindInter: "FindInter" as const
 };
 
 export default {
   FONT_SIZES,
+  COLORS,
+  FONTFAMILY,
+  TYPEROLE,
+  Screen,
+  Account: {
+    INSTITUTION : {
+      email: "a@gmail.com",
+      password: "123456",
+    },
+    INTERPRETER : {
+      email: "b@gmail.com",
+      password: "123456",
+    }
+  },
 };

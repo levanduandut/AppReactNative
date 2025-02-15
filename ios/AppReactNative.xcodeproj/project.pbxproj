@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* AppReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AppReactNativeTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-AppReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AppReactNative.a */; };
+		0D2891341EE041069F3D316C /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = A47E5AE705974AC6840F0F68 /* index.ts */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1A895EFF78B74B11B153BC93 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A1292D413E64DC08E4C1C17 /* DMSans-Medium.ttf */; };
 		444A245B9DDD97AD5501A14C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		45D034ABFE9D441BAB976C3B /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A36625D1C8943DAAEB9C8FC /* Gilroy-Bold.ttf */; };
+		5A718ABDC7C6441EAC50FA79 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1474FD1325F4156AF2CD2C1 /* DMSans-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-AppReactNative-AppReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AppReactNative-AppReactNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		878999B560514AB898A2302C /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148EB1066C65437E8E73A416 /* DMSans-Regular.ttf */; };
+		BA7D7895A7B44FD59A71497B /* KumbhSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D68F0A04EBB44E3885DFBF07 /* KumbhSans-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,7 @@
 		00E356EE1AD99517003FC87E /* AppReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AppReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppReactNativeTests.m; sourceTree = "<group>"; };
+		0A1292D413E64DC08E4C1C17 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Medium.ttf"; path = "../Config/fonts/DMSans-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AppReactNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReactNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppReactNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AppReactNative/AppDelegate.mm; sourceTree = "<group>"; };
@@ -38,13 +45,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AppReactNative/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = AppReactNative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		148EB1066C65437E8E73A416 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Regular.ttf"; path = "../Config/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-AppReactNative-AppReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppReactNative-AppReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A36625D1C8943DAAEB9C8FC /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Bold.ttf"; path = "../Config/fonts/Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-AppReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReactNative.debug.xcconfig"; path = "Target Support Files/Pods-AppReactNative/Pods-AppReactNative.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-AppReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReactNative.release.xcconfig"; path = "Target Support Files/Pods-AppReactNative/Pods-AppReactNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-AppReactNative-AppReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReactNative-AppReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-AppReactNative-AppReactNativeTests/Pods-AppReactNative-AppReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-AppReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AppReactNative-AppReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReactNative-AppReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-AppReactNative-AppReactNativeTests/Pods-AppReactNative-AppReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A47E5AE705974AC6840F0F68 /* index.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = index.ts; path = ../Config/fonts/index.ts; sourceTree = "<group>"; };
+		C1474FD1325F4156AF2CD2C1 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Bold.ttf"; path = "../Config/fonts/DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		D68F0A04EBB44E3885DFBF07 /* KumbhSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KumbhSans-SemiBold.ttf"; path = "../Config/fonts/KumbhSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -109,6 +121,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5097EC2488514F07A5E70E08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D68F0A04EBB44E3885DFBF07 /* KumbhSans-SemiBold.ttf */,
+				1A36625D1C8943DAAEB9C8FC /* Gilroy-Bold.ttf */,
+				C1474FD1325F4156AF2CD2C1 /* DMSans-Bold.ttf */,
+				0A1292D413E64DC08E4C1C17 /* DMSans-Medium.ttf */,
+				148EB1066C65437E8E73A416 /* DMSans-Regular.ttf */,
+				A47E5AE705974AC6840F0F68 /* index.ts */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +151,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				5097EC2488514F07A5E70E08 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -247,6 +274,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				444A245B9DDD97AD5501A14C /* PrivacyInfo.xcprivacy in Resources */,
+				BA7D7895A7B44FD59A71497B /* KumbhSans-SemiBold.ttf in Resources */,
+				45D034ABFE9D441BAB976C3B /* Gilroy-Bold.ttf in Resources */,
+				5A718ABDC7C6441EAC50FA79 /* DMSans-Bold.ttf in Resources */,
+				1A895EFF78B74B11B153BC93 /* DMSans-Medium.ttf in Resources */,
+				878999B560514AB898A2302C /* DMSans-Regular.ttf in Resources */,
+				0D2891341EE041069F3D316C /* index.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
