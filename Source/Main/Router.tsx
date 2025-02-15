@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Constants } from 'base-common';
-import { FindInter, Home, Role, SignIn } from 'base-screen';
+import { FindInter, Home, OnGoing, Role, SignIn } from 'base-screen';
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, View } from 'react-native';
 import { enableScreens } from 'react-native-screens';
@@ -21,5 +21,6 @@ export default function (props: any) {
     <Stack.Screen name={Constants.Screen.Home} component={Home} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.Role} component={Role} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.SignIn} component={SignIn} options={commonNavigationOption} />
+    <Stack.Screen name={Constants.Screen.OnGoing} component={OnGoing} options={commonNavigationOption} />
   </Stack.Navigator>
 }

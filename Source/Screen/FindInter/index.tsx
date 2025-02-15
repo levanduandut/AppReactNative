@@ -14,7 +14,9 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 const FindInter = () => {
     const navigation = useNavigation<any>();
     const [languageChoose, setLanguageChoose] = useState<string[]>([]);
-    const [selectedOption, setSelectedOption] = useState<string>("Présentiel");
+    const [selectedOption, setSelectedOption] = useState<string>(TYPE_LOCATION.Distanciel);
+    const [description, setDescription] = useState<string>("");
+
 
     const Languages = [
         { name: "Anglais" },
@@ -30,6 +32,12 @@ const FindInter = () => {
         { name: "Ourdou" },
         { name: "+ Plus", plus: true }
     ];
+
+    const handleClickFind = () => {
+        if (selectedOption === TYPE_LOCATION.Distanciel) {
+            navigation.navigate(Constants.Screen.OnGoing, { description , language: languageChoose });
+        }
+    }
 
 
     return (
@@ -66,7 +74,7 @@ const FindInter = () => {
                                         if (!item.plus) {
                                             setLanguageChoose(prev =>
                                                 prev.includes(item.name)
-                                                    ? prev.filter(lang => lang !== item.name) 
+                                                    ? prev.filter(lang => lang !== item.name)
                                                     : [...prev, item.name]
                                             );
                                         }
@@ -107,12 +115,14 @@ const FindInter = () => {
                             style={styles.textInputDes}
                             placeholder={languages.get("find.inter.description.placeholder")}
                             placeholderTextColor={Config.Color.Common.placeholder_color}
+                            value={description} 
+                            onChangeText={setDescription}
                         />
                         <Image style={{ position: 'absolute', top: 28, left: 12 }} source={Config.Icon.FindInter.ic_note} />
                     </View>
                 </KeyboardAwareScrollView>
                 <View style={styles.viewBtn}>
-                    <Button text={languages.get("find.inter.search")} onPress={() => { }} />
+                    <Button text={languages.get("find.inter.search")} onPress={handleClickFind} />
                 </View>
             </View>
         </SafeAreaView>
