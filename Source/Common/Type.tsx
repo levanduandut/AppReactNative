@@ -19,6 +19,11 @@ export interface SrcConfig {
     Icon: {
         Common: {
             ic_back: ImageSourcePropType
+            ic_dot: ImageSourcePropType
+            ic_close: ImageSourcePropType
+            ic_star: ImageSourcePropType
+            ic_chat: ImageSourcePropType
+            ic_call: ImageSourcePropType
         }
         Role: {
             role_institution: ImageSourcePropType

@@ -1,9 +1,9 @@
 import React from 'react';
-import { SafeAreaView, } from 'react-native';
 
-import styles from './App.Style';
 import Router from './Router';
-import { Role } from 'base-screen';
+import { LogBox } from "react-native";
+
+LogBox.ignoreAllLogs(true);
 
 if (__DEV__) {
   require("./ReactotronConfig");

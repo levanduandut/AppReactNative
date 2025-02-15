@@ -21,6 +21,11 @@ const Config: SrcConfig = {
     Icon: {
         Common: {
             ic_back: require("./image/ic_back.png"),
+            ic_dot: require("./image/header_dot.png"),
+            ic_close: require("./image/header_close.png"),
+            ic_star: require("./image/ic_star.png"),
+            ic_chat: require("./image/ic_chat.png"),
+            ic_call: require("./image/ic_call.png"),
         },
         Role: {
             role_institution: require("./image/role_institution.png"),
