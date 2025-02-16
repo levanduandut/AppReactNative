@@ -1,15 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { FlatList, Image, ImageSourcePropType, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
 import languages from "../../../Config/languages";
-import { Datas } from "base-common";
 import { Constants } from "base-common";
-import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import Config from "../../../Config";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Button, Tag } from "base-commponent";
 import { TYPEROLE } from "base-common/Constants";
-import { interpreter } from "base-common/Datas";
+import { DataMission, DataMissionHistory, DataMissionHistoryInter, DataMissionInter, interpreter } from "base-common/Datas";
 
 const Home = ({ route }: { route: any }) => {
     const typeRole = route?.params?.type || TYPEROLE.INTERPRETER
@@ -32,12 +31,12 @@ const Home = ({ route }: { route: any }) => {
     useEffect(() => {
         //Fake data
         if (typeRole === TYPEROLE.INSTITUTION) {
-            setDataMission(Datas.DataMission);
-            setDataMissionHistory(Datas.DataMissionHistory);
+            setDataMission(DataMission);
+            setDataMissionHistory(DataMissionHistory);
         }
         if (typeRole === TYPEROLE.INTERPRETER) {
-            setDataMission(Datas.DataMissionInter);
-            setDataMissionHistory(Datas.DataMissionHistoryInter);
+            setDataMission(DataMissionInter);
+            setDataMissionHistory(DataMissionHistoryInter);
         }
     }, [])
 

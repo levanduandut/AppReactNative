@@ -20,3 +20,12 @@ export type Interpreter = {
     suppor_doc: SupportDocument[];
     exp: Experience[];
 };
+
+export type Mission = {
+    name: string;
+    language: string;
+    status: number;
+    time: string;
+    addreess: string;
+    icon: any;
+};

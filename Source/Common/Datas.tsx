@@ -1,6 +1,6 @@
 import Config from "../../Config";
 import languages from "../../Config/languages";
-import { Interpreter } from "./TypeData";
+import { Interpreter, Mission } from "./TypeData";
 import { TYPEROLE } from "./Constants";
 
 
@@ -27,6 +27,98 @@ export const interpreter: Interpreter = {
     ],
 };
 
+export const DataMission : Mission[] = [
+    {
+        name: 'Allemand',
+        language: 'Français',
+        status: 1,
+        time: '10 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_avatar_default
+    },
+    {
+        name: 'Anglais',
+        language: 'Français',
+        status: 2,
+        time: '11 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_avatar_default
+    },
+    {
+        name: 'Arabe',
+        language: 'Français',
+        status: 2,
+        time: '11 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_avatar_default
+    },
+]
+
+export const DataMissionInter : Mission[] = [
+    {
+        name: 'Allemand',
+        language: 'Français',
+        status: 1,
+        time: '10 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_company_default
+    },
+    {
+        name: 'Anglais',
+        language: 'Français',
+        status: 2,
+        time: '11 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_company_default
+    },
+    {
+        name: 'Arabe',
+        language: 'Français',
+        status: 2,
+        time: '11 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_company_default
+    },
+]
+
+export const DataMissionHistory: Mission[] = [
+    {
+        name: 'Allemand',
+        language: 'Français',
+        status: 3,
+        time: '10 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_avatar_default
+    },
+    {
+        name: 'Anglais',
+        language: 'Français',
+        status: 3,
+        time: '11 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_avatar_default
+    },
+]
+
+export const DataMissionHistoryInter: Mission[] =[
+    {
+        name: 'Allemand',
+        language: 'Français',
+        status: 3,
+        time: '10 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_company_default
+    },
+    {
+        name: 'Anglais',
+        language: 'Français',
+        status: 3,
+        time: '11 juillet à 8h30',
+        addreess: "75001 Paris",
+        icon: Config.Icon.Home.ic_company_default
+    },
+]
+
 export default {
     RoleScreen: [
         {
@@ -39,93 +131,5 @@ export default {
             icon: Config.Icon.Role.role_interpreter,
             type: TYPEROLE.INTERPRETER
         }
-    ],
-    DataMission: [
-        {
-            name: 'Allemand',
-            language: 'Français',
-            status: 1,
-            time: '10 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_avatar_default
-        },
-        {
-            name: 'Anglais',
-            language: 'Français',
-            status: 2,
-            time: '11 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_avatar_default
-        },
-        {
-            name: 'Arabe',
-            language: 'Français',
-            status: 2,
-            time: '11 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_avatar_default
-        },
-    ],
-    DataMissionHistory: [
-        {
-            name: 'Allemand',
-            language: 'Français',
-            status: 3,
-            time: '10 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_avatar_default
-        },
-        {
-            name: 'Anglais',
-            language: 'Français',
-            status: 3,
-            time: '11 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_avatar_default
-        },
-    ],
-    DataMissionInter: [
-        {
-            name: 'Allemand',
-            language: 'Français',
-            status: 1,
-            time: '10 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_company_default
-        },
-        {
-            name: 'Anglais',
-            language: 'Français',
-            status: 2,
-            time: '11 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_company_default
-        },
-        {
-            name: 'Arabe',
-            language: 'Français',
-            status: 2,
-            time: '11 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_company_default
-        },
-    ],
-    DataMissionHistoryInter: [
-        {
-            name: 'Allemand',
-            language: 'Français',
-            status: 3,
-            time: '10 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_company_default
-        },
-        {
-            name: 'Anglais',
-            language: 'Français',
-            status: 3,
-            time: '11 juillet à 8h30',
-            addreess: "75001 Paris",
-            icon: Config.Icon.Home.ic_company_default
-        },
     ],
 }

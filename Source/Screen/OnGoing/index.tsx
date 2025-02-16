@@ -20,9 +20,6 @@ const OnGoing = () => {
     const [loadingSuccess, setLoadingSuccess] = useState<boolean>(false);
     const progressAnim = useRef(new Animated.Value(0)).current;
 
-
-
-
     useEffect(() => {
 
         //Fake running
