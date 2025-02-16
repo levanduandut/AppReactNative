@@ -143,7 +143,7 @@ const SignUp = ({ route }: { route: any }) => {
       <View style={styles.viewDoc}>
         <Text style={styles.textTitleDoc}>Documents de vérification</Text>
         <Text style={styles.textWelcome}>Veuillez fournir un en-tête avec la signature et le cachet de votre institution pour vérification. Votre compte sera validé avant que vous puissiez utiliser notre service.</Text>
-        <ImageUploader images={images} onChangeImages={setImages} />
+        <ImageUploader images={images} onChangeImages={setImages} showAddButton={true} />
       </View>
       <View style={styles.viewBtn}>
         <Button text={languages.get("signin.login")} onPress={() => onClickSingnUp(type)} />
