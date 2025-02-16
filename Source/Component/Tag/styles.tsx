@@ -6,6 +6,7 @@ export default StyleSheet.create({
         paddingHorizontal: 8,
         paddingVertical: 2,
         marginLeft: 4,
+        borderRadius: 6
     },
     text: {
         ...FONTFAMILY.mainText500,

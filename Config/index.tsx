@@ -52,6 +52,11 @@ const Config: SrcConfig = {
             ic_find: require("./image/home_find.png"),
             ic_next: require("./image/home_next.png"),
             ic_avatar_default: require("./image/home_avatar_test.png"),
+            ic_home_center_error: require("./image/home_center_err.png"),
+            ic_on: require("./image/home_on.png"),
+            ic_off: require("./image/home_off.png"),
+            ic_warning: require("./image/home_warning.png"),
+            ic_company_default: require("./image/home_company.png")
         },
         FindInter: {
             ic_pin: require("./image/find_pin.png"),

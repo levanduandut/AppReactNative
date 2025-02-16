@@ -50,6 +50,11 @@ export interface SrcConfig {
             ic_find: ImageSourcePropType
             ic_next: ImageSourcePropType
             ic_avatar_default: ImageSourcePropType
+            ic_home_center_error: ImageSourcePropType
+            ic_on: ImageSourcePropType
+            ic_off: ImageSourcePropType
+            ic_warning: ImageSourcePropType
+            ic_company_default: ImageSourcePropType
         }
         FindInter: {
             ic_pin: ImageSourcePropType

@@ -47,7 +47,8 @@ export const Screen = {
     OnGoing: "OnGoing" as const,
     ProfileInter: "ProfileInter" as const,
     OnGoingMap: "OnGoingMap" as const,
-    SignUp: "SignUp" as const
+    SignUp: "SignUp" as const,
+    Supporting: "Supporting" as const
 };
 
 export default {

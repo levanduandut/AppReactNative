@@ -12,7 +12,6 @@ import { SafeAreaView } from "react-native-safe-area-context"
 const SignUp = ({ route }: { route: any }) => {
   const type = route?.params?.type || TYPEROLE.INSTITUTION
   const navigation = useNavigation<any>();
-  const [isCheked, setIsChecked] = useState<boolean>(false)
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [showPassword, setShowPassword] = useState<boolean>(false);

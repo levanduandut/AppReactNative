@@ -18,6 +18,7 @@ interface ImageUploaderProps {
     containerStyle?: StyleProp<ViewStyle>;
     uploadIcon?: ImageSourcePropType;
     closeIcon?: ImageSourcePropType;
+    showAddButton?: boolean;
 }
 
 const ImageUploader = ({
@@ -25,10 +26,12 @@ const ImageUploader = ({
     onChangeImages,
     containerStyle,
     uploadIcon,
-    closeIcon
+    closeIcon,
+    showAddButton
 }: ImageUploaderProps) => {
 
     const pickImage = () => {
+        if (!showAddButton) return; // Nếu đã đạt max thì không cho chọn ảnh
         launchImageLibrary({ mediaType: "photo" }, (response) => {
             if (response.didCancel || response.errorCode || !response.assets) return;
             onChangeImages([...images, response.assets[0].uri]);
@@ -44,7 +47,7 @@ const ImageUploader = ({
     return (
         <View style={[styles.container, containerStyle]}>
             <FlatList
-                data={[...images, "add"]}
+                data={[...images, ...(showAddButton ? ["add"] : [])]} // Ẩn nút add nếu đã đạt max
                 horizontal
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item, index }) => (
@@ -55,7 +58,11 @@ const ImageUploader = ({
                     ) : (
                         <View style={styles.imageWrapper}>
                             <Image source={{ uri: item }} style={styles.image} />
-                            <TouchableOpacity style={styles.removeButton} onPress={() => removeImage(index)}>
+                            <TouchableOpacity style={styles.removeButton} onPress={() => {
+                                const newImages = [...images];
+                                newImages.splice(index, 1);
+                                onChangeImages(newImages);
+                            }}>
                                 <Image source={Config.Icon.Common.ic_close_square} style={styles.iconSize} />
                             </TouchableOpacity>
                         </View>
