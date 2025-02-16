@@ -5,6 +5,7 @@ export default StyleSheet.create({
     container: {
         paddingHorizontal: 8,
         paddingVertical: 2,
+        marginLeft: 4,
     },
     text: {
         ...FONTFAMILY.mainText500,

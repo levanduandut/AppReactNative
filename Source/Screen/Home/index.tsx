@@ -28,7 +28,7 @@ const Home = ({ route }: { route: any }) => {
         //Fake data
         if (typeRole === TYPEROLE.INSTITUTION) {
             setDataMission(Datas.DataMission);
-            setDataMissionHistory(Datas.DataMissionHistory);    
+            setDataMissionHistory(Datas.DataMissionHistory);
         }
     }, [])
 
@@ -52,7 +52,7 @@ const Home = ({ route }: { route: any }) => {
         const { text, colorText, colorView } = getStatusInfo(item?.status);
         return (
             <View style={styles.viewItem}>
-                <View style={{ flexDirection: "row" }}>
+                <View style={styles.viewItemContent}>
                     <Image style={styles.avatar} source={item?.icon ? item.icon : Config.Icon.Home.ic_avatar_default} />
                     <View style={styles.viewDes}>
                         <Text style={styles.textItemName}>{item?.name + " - " + item?.language}</Text>

@@ -26,6 +26,8 @@ const Config: SrcConfig = {
             ic_star: require("./image/ic_star.png"),
             ic_chat: require("./image/ic_chat.png"),
             ic_call: require("./image/ic_call.png"),
+            ic_note: require("./image/ic_note.png"),
+            ic_next_detail: require("./image/ic_next_detail.png"),
         },
         Role: {
             role_institution: require("./image/role_institution.png"),
@@ -51,6 +53,15 @@ const Config: SrcConfig = {
         FindInter: {
             ic_pin: require("./image/find_pin.png"),
             ic_note: require("./image/find_note.png"),
+        },
+        Info: {
+            ic_return: require("./image/info_return.png"),
+            ic_info_default: require("./image/info_background.png"),
+            ic_cake: require("./image/info_cake.png"),
+            ic_city: require("./image/info_city.png"),
+            ic_verify: require("./image/info_verify.png"),
+            ic_close: require("./image/info_close.png"),
+            ic_progress: require("./image/ic_progress.png"),
         }
     },
 }

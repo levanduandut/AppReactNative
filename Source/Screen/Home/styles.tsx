@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     header: {
         backgroundColor: COLORS.primaryColor,
-        height: 200,
+        height: 240,
         ...Styles.paddingApp
     },
     viewHeader: {
@@ -21,9 +21,10 @@ export default StyleSheet.create({
     },
     textHeader: {
         ...FONTFAMILY.secordFont,
-        fontSize: FONT_SIZES.LARGE,
+        fontSize: FONT_SIZES.MIDDLE,
         color: COLORS.secText,
-        marginTop: 10
+        lineHeight: 28,
+        width: 140,
     },
     viewBottom: {
         backgroundColor: COLORS.greyColorBg,
@@ -133,5 +134,8 @@ export default StyleSheet.create({
     },
     iconNext: {
         marginTop: 12
+    },
+    viewItemContent: {
+        flexDirection: "row",
     }
 })

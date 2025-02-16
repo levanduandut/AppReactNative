@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Alert, Image, Text, TouchableOpacity, View } from "react-native"
+import {Image, Text, TouchableOpacity, View } from "react-native"
 import styles from "./styles"
 import Constants, { TYPEROLE } from "base-common/Constants"
 import languages from "../../../Config/languages"
@@ -61,7 +61,7 @@ const SignIn = ({ route }: { route: any }) => {
         password === institutionAccount.password
       ) {
         Global.isLogin = true;
-        navigation.navigate(Constants.Screen.Home, {});
+        navigation.navigate(Constants.Screen.Home, {type: TYPEROLE.INSTITUTION});
       } else {
         setErrPassword(languages.get("signin.password.error"));
       }
@@ -71,7 +71,7 @@ const SignIn = ({ route }: { route: any }) => {
         password === interpreterAccount.password
       ) {
         Global.isLogin = true;
-        navigation.navigate(Constants.Screen.Home, {});
+        navigation.navigate(Constants.Screen.Home, {type: TYPEROLE.INTERPRETER});
       } else {
         setErrPassword(languages.get("signin.password.error"));
       }

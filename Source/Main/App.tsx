@@ -1,5 +1,5 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-
 import Router from './Router';
 import { LogBox } from "react-native";
 
@@ -9,12 +9,16 @@ if (__DEV__) {
   require("./ReactotronConfig");
 }
 import { NavigationContainer } from '@react-navigation/native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 function App(): React.JSX.Element {
 
   return (
-    <NavigationContainer>
-      <Router />
-    </NavigationContainer>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <Router />
+      </NavigationContainer>
+    </GestureHandlerRootView>
+
   );
 }
 

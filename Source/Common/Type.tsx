@@ -24,6 +24,8 @@ export interface SrcConfig {
             ic_star: ImageSourcePropType
             ic_chat: ImageSourcePropType
             ic_call: ImageSourcePropType
+            ic_note: ImageSourcePropType
+            ic_next_detail: ImageSourcePropType
         }
         Role: {
             role_institution: ImageSourcePropType
@@ -49,6 +51,15 @@ export interface SrcConfig {
         FindInter: {
             ic_pin: ImageSourcePropType
             ic_note: ImageSourcePropType
+        }
+        Info: {
+            ic_return: ImageSourcePropType
+            ic_info_default: ImageSourcePropType
+            ic_cake: ImageSourcePropType
+            ic_city: ImageSourcePropType
+            ic_verify: ImageSourcePropType
+            ic_close: ImageSourcePropType,
+            ic_progress: ImageSourcePropType
         }
     }
 }

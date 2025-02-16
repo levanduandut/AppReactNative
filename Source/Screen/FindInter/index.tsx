@@ -1,14 +1,13 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { FlatList, Image, ImageSourcePropType, KeyboardAvoidingView, Platform, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import React, { useState } from "react";
+import { Alert, FlatList, Image,Platform, Text, TextInput, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
 import languages from "../../../Config/languages";
-import { Datas } from "base-common";
 import { Constants } from "base-common";
-import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import Config from "../../../Config";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Button, Header, RadioBox } from "base-commponent";
-import { COLORS, TYPE_LOCATION, TYPEROLE } from "base-common/Constants";
+import { TYPE_LOCATION } from "base-common/Constants";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view"
 
 const FindInter = () => {
@@ -34,8 +33,15 @@ const FindInter = () => {
     ];
 
     const handleClickFind = () => {
+        if(languageChoose.length === 0) {
+            Alert.alert("Veuillez choisir au moins une langue");
+            return
+        }
         if (selectedOption === TYPE_LOCATION.Distanciel) {
             navigation.navigate(Constants.Screen.OnGoing, { description , language: languageChoose });
+        }
+        if (selectedOption === TYPE_LOCATION.Présentiel) {
+            navigation.navigate(Constants.Screen.OnGoingMap, { description , language: languageChoose });
         }
     }
 
@@ -60,7 +66,7 @@ const FindInter = () => {
                     <View>
                         <FlatList
                             data={Languages}
-                            numColumns={4} // Số cột hiển thị
+                            numColumns={4}
                             keyExtractor={(item) => item.name}
                             style={styles.listLanguage}
                             renderItem={({ item }) => (
@@ -88,7 +94,6 @@ const FindInter = () => {
                                         {item.name}
                                     </Text>
                                 </TouchableOpacity>
-
                             )}
                         />
                     </View>

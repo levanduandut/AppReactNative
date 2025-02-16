@@ -1,16 +1,18 @@
 import { Styles } from "base-common"
 import { COLORS, FONT_SIZES, FONTFAMILY } from "base-common/Constants"
-import { StyleSheet } from "react-native"
+import { Dimensions, StyleSheet } from "react-native"
 import Config from "../../../Config"
-
+const height = Dimensions.get('window').height
+const widthScreen = Dimensions.get('window').width
 export default StyleSheet.create({
     container: {
         ...Styles.container,
-        ...Styles.paddingApp,
+        // ...Styles.paddingApp,
         backgroundColor: 'white'
     },
     containerContent: {
-        marginTop: 11
+        marginTop: 11,
+        minHeight: height / 3,
     },
     title: {
         ...Styles.titleLv3,
@@ -46,7 +48,7 @@ export default StyleSheet.create({
     viewBtn: {
         position: "absolute",
         bottom: 45,
-        width: '100%',
+        width: widthScreen - 30,
         marginLeft: 15,
     },
     btnCancel: {
@@ -123,13 +125,13 @@ export default StyleSheet.create({
         width: "98%",
         height: 8,
         backgroundColor: "transparent",
-        borderTopLeftRadius: 30, 
+        borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         overflow: "hidden",
     },
-    
+
     progressBar: {
-        height: "100%",
+        height: 3,
         backgroundColor: "#00008B", // Màu xanh đậm như ảnh
     },
     mainModalContent: {
@@ -176,5 +178,43 @@ export default StyleSheet.create({
     },
     mgTop9: {
         marginTop: 9
+    },
+    viewHeaderClose: {
+        position: "absolute",
+        right: 20,
+        top: 50
+    },
+    progressContainer: {
+        position: 'absolute',
+        width: widthScreen - 40,
+        backgroundColor: 'white',
+        paddingHorizontal: 16,
+        paddingVertical: 14,
+        borderRadius: 10,
+        marginLeft: 20,
+        bottom: 12,
+    },
+    lineProgress: {
+        height: 8,
+        backgroundColor: COLORS.primaryColor,
+        borderRadius: 4,
+    },
+    lineProgressNone: {
+        height: 8,
+        backgroundColor: "#E5E5F4",
+        borderRadius: 4,
+        marginTop: 20
+    },
+    iconProgress: {
+        position: "absolute",
+        top: -8,
+        left: -2,
+    },
+    textMinute: {
+        color: COLORS.greyText,
+        ...FONTFAMILY.mainText400,
+        fontSize: FONT_SIZES.MEDIUM,
+        marginTop: 6,
+        marginLeft: 5,
     }
 })

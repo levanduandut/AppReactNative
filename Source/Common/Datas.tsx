@@ -1,6 +1,31 @@
 import Config from "../../Config";
 import languages from "../../Config/languages";
+import { Interpreter } from "./TypeData";
 import { TYPEROLE } from "./Constants";
+
+
+export const interpreter: Interpreter = {
+    id: 123,
+    name: "Ananya Sharma",
+    phoneNumber: "+33 6 12 34 56 78",
+    language: ["Français", "Hindi"],
+    vote: 4.5,
+    location: "750001 Paris",
+    birth: "15 août 1994",
+    place_birth: "Lyon, France",
+    suppor_doc: [
+        { name: "Document d'identité", verify: true },
+        { name: "Vérification du casier judiciaire", verify: false },
+        { name: "Kbis", verify: false },
+        { name: "Attestation URSSAF", verify: true },
+        { name: "RC PRO", verify: true },
+    ],
+    exp: [
+        { title: "Police Nationale", description: "Interprétariat lors d'enquêtes et gardes à vue." },
+        { title: "Tribunaux", description: "Interprétariat simultanée lors de procès et audiences." },
+        { title: "Administrations publiques", description: "Assistance linguistique pour des démarches administratives." },
+    ],
+};
 
 export default {
     RoleScreen: [
@@ -41,7 +66,7 @@ export default {
             icon: Config.Icon.Home.ic_avatar_default
         },
     ],
-    DataMissionHistory : [
+    DataMissionHistory: [
         {
             name: 'Allemand',
             language: 'Français',
@@ -58,5 +83,5 @@ export default {
             addreess: "75001 Paris",
             icon: Config.Icon.Home.ic_avatar_default
         },
-    ]
+    ],
 }
