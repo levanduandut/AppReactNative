@@ -60,6 +60,7 @@ export interface SrcConfig {
             ic_verify: ImageSourcePropType
             ic_close: ImageSourcePropType,
             ic_progress: ImageSourcePropType
+            ic_separator: ImageSourcePropType
         }
     }
 }

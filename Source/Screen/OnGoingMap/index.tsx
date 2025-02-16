@@ -139,6 +139,9 @@ const OnGoing = () => {
                     paddingHorizontal: 20,
                 }}>
                     <BottomSheetScrollView style={styles.containerContent}>
+                        <View style={{ alignSelf: 'center'}}>
+                            <Image source={Config.Icon.Info.ic_separator}/>
+                        </View>
                         <View style={styles.viewTitle}>
                             <Text style={styles.title}>Interprétariat distanciel</Text>
                             <Text style={styles.title}>Français - {language.join(", ")} </Text>

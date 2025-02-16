@@ -20,6 +20,7 @@ export default StyleSheet.create({
     },
     viewTitle: {
         width: '80%',
+        marginTop: 12,
     },
     titleSec: {
         marginTop: 6,

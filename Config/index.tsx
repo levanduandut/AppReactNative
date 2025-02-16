@@ -62,6 +62,7 @@ const Config: SrcConfig = {
             ic_verify: require("./image/info_verify.png"),
             ic_close: require("./image/info_close.png"),
             ic_progress: require("./image/ic_progress.png"),
+            ic_separator: require("./image/ic_separator.png"),
         }
     },
 }
