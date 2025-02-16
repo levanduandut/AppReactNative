@@ -14,13 +14,13 @@ import styles from "./styles"
 import Config from "../../../Config"
 import { useNavigation } from "@react-navigation/native"
 
-interface HeadaerType {
+interface HeaderType {
     text: string
 }
 
 const Header = ({
     text,
-}: HeadaerType) => {
+}: HeaderType) => {
      const navigation = useNavigation<any>();
     return (
         <View

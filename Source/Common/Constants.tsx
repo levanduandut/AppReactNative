@@ -43,7 +43,12 @@ export const Screen = {
     Role: "Role" as const,
     SignIn: "SignIn" as const,
     Home: "Home" as const,
-    FindInter: "FindInter" as const
+    FindInter: "FindInter" as const,
+    OnGoing: "OnGoing" as const,
+    ProfileInter: "ProfileInter" as const,
+    OnGoingMap: "OnGoingMap" as const,
+    SignUp: "SignUp" as const,
+    Supporting: "Supporting" as const
 };
 
 export default {

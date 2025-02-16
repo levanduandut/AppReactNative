@@ -22,6 +22,11 @@ export default StyleSheet.create({
         color: COLORS.titleColor,
         ...Config.Font.fontGilroyBold
     },
+    titleLv21: {
+        fontSize: FONT_SIZES.MIDDLE,
+        color: COLORS.primaryColor,
+        ...Config.Font.fontGilroyBold
+    },
     textGrey: {
         fontSize: FONT_SIZES.MEDIUM,
         color: COLORS.greyText,

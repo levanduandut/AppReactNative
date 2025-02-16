@@ -21,6 +21,16 @@ const Config: SrcConfig = {
     Icon: {
         Common: {
             ic_back: require("./image/ic_back.png"),
+            ic_dot: require("./image/header_dot.png"),
+            ic_close: require("./image/header_close.png"),
+            ic_star: require("./image/ic_star.png"),
+            ic_chat: require("./image/ic_chat.png"),
+            ic_call: require("./image/ic_call.png"),
+            ic_note: require("./image/ic_note.png"),
+            ic_next_detail: require("./image/ic_next_detail.png"),
+            ic_plus: require("./image/ic_plus.png"),
+            ic_down: require("./image/ic_down.png"),
+            ic_close_square: require("./image/ic_close_square.png"),
         },
         Role: {
             role_institution: require("./image/role_institution.png"),
@@ -42,10 +52,28 @@ const Config: SrcConfig = {
             ic_find: require("./image/home_find.png"),
             ic_next: require("./image/home_next.png"),
             ic_avatar_default: require("./image/home_avatar_test.png"),
+            ic_home_center_error: require("./image/home_center_err.png"),
+            ic_on: require("./image/home_on.png"),
+            ic_off: require("./image/home_off.png"),
+            ic_warning: require("./image/home_warning.png"),
+            ic_company_default: require("./image/home_company.png")
         },
         FindInter: {
             ic_pin: require("./image/find_pin.png"),
             ic_note: require("./image/find_note.png"),
+        },
+        Info: {
+            ic_return: require("./image/info_return.png"),
+            ic_info_default: require("./image/info_background.png"),
+            ic_cake: require("./image/info_cake.png"),
+            ic_city: require("./image/info_city.png"),
+            ic_verify: require("./image/info_verify.png"),
+            ic_close: require("./image/info_close.png"),
+            ic_progress: require("./image/ic_progress.png"),
+            ic_separator: require("./image/ic_separator.png"),
+        },
+        SignUp: {
+            ic_bulding: require("./image/ic_building.png"),
         }
     },
 }

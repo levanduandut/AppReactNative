@@ -19,6 +19,16 @@ export interface SrcConfig {
     Icon: {
         Common: {
             ic_back: ImageSourcePropType
+            ic_dot: ImageSourcePropType
+            ic_close: ImageSourcePropType
+            ic_star: ImageSourcePropType
+            ic_chat: ImageSourcePropType
+            ic_call: ImageSourcePropType
+            ic_note: ImageSourcePropType
+            ic_next_detail: ImageSourcePropType
+            ic_plus: ImageSourcePropType
+            ic_close_square: ImageSourcePropType
+            ic_down: ImageSourcePropType
         }
         Role: {
             role_institution: ImageSourcePropType
@@ -40,10 +50,28 @@ export interface SrcConfig {
             ic_find: ImageSourcePropType
             ic_next: ImageSourcePropType
             ic_avatar_default: ImageSourcePropType
+            ic_home_center_error: ImageSourcePropType
+            ic_on: ImageSourcePropType
+            ic_off: ImageSourcePropType
+            ic_warning: ImageSourcePropType
+            ic_company_default: ImageSourcePropType
         }
         FindInter: {
             ic_pin: ImageSourcePropType
             ic_note: ImageSourcePropType
+        }
+        Info: {
+            ic_return: ImageSourcePropType
+            ic_info_default: ImageSourcePropType
+            ic_cake: ImageSourcePropType
+            ic_city: ImageSourcePropType
+            ic_verify: ImageSourcePropType
+            ic_close: ImageSourcePropType,
+            ic_progress: ImageSourcePropType
+            ic_separator: ImageSourcePropType
+        }
+        SignUp: {
+            ic_bulding: ImageSourcePropType
         }
     }
 }
