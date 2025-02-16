@@ -261,5 +261,8 @@ export default StyleSheet.create({
         width: 127,
         borderWidth: 1,
         borderColor: COLORS.lineColor
+    },
+    viewWarningContent: {
+        width: "90%" 
     }
 })

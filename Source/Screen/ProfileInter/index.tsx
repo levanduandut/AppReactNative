@@ -1,12 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Alert, Animated, Easing, Image, ImageBackground, ImageSourcePropType, Modal, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
+import { Image, ImageBackground,  ScrollView, Text, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
-import languages from "../../../Config/languages";
-import { Datas, Styles } from "base-common";
-import { Constants } from "base-common";
-import { useNavigation, NavigationProp, useRoute, RouteProp } from "@react-navigation/native";
+import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Button, HeaderClose, Tag } from "base-commponent";
+import { Button, Tag } from "base-commponent";
 import Config from "../../../Config";
 import { interpreter } from "base-common/Datas";
 import { COLORS } from "base-common/Constants";

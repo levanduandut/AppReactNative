@@ -19,7 +19,6 @@ export default function (props: any) {
     <Stack.Screen name={Constants.Screen.Role} component={Role} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.Home} component={Home} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.SignIn} component={SignIn} options={commonNavigationOption} />
-    <Stack.Screen name={Constants.Screen.OnGoingMap} component={OnGoingMap} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.FindInter} component={FindInter} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.OnGoing} component={OnGoing} options={commonNavigationOption} />
     <Stack.Screen name={Constants.Screen.ProfileInter} component={ProfileInter} options={commonNavigationOption} />

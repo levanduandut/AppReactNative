@@ -174,7 +174,7 @@ const Home = ({ route }: { route: any }) => {
                                 <View style={styles.orangeBar} />
                                 <View style={[styles.viewHeaderTop, styles.viewWarning]}>
                                     <Image source={Config.Icon.Home.ic_warning} />
-                                    <View style={{ width: "90%" }}>
+                                    <View style={styles.viewWarningContent}>
                                         <Text style={styles.textWarning}>Contrat non signé</Text>
                                         <Text style={styles.textMoneySec}>
                                             Vous avez un contrat non signé qui arrive à échéance.

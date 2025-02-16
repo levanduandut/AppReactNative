@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
-import { Image, Text, TouchableOpacity, View } from "react-native"
+import { Text, View } from "react-native"
 import styles from "./styles"
 import Constants, { TYPEROLE } from "base-common/Constants"
 import languages from "../../../Config/languages"
-import { Button, CheckBox, Header, ImageUploader, InputBox } from "base-commponent"
+import { Button, Header, ImageUploader, InputBox } from "base-commponent"
 import Config from "../../../Config"
 import { Global, Utils } from "base-common"
 import { useNavigation } from "@react-navigation/native"
@@ -63,9 +63,6 @@ const SignUp = ({ route }: { route: any }) => {
     if (firstName === '' || lastName === '' || phone === '' || address === '' || establishment === '') {
       return
     }
-
-    const institutionAccount = Constants.Account.INSTITUTION;
-    const interpreterAccount = Constants.Account.INTERPRETER;
 
     if (type === TYPEROLE.INSTITUTION) {
       navigation.navigate(Constants.Screen.Home, { type: TYPEROLE.INSTITUTION });

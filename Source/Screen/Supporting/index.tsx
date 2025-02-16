@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import { Image, ImageSourcePropType, Text, TouchableOpacity, View } from "react-native";
+import { Text, View } from "react-native";
 import styles from "./styles";
-import languages from "../../../Config/languages";
-import { Datas } from "base-common";
-import { Constants } from "base-common";
-import { useNavigation, NavigationProp, useRoute, RouteProp } from "@react-navigation/native";
+import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Button, Header, ImageUploader } from "base-commponent";
 type SupportingRouteParams = {
@@ -28,7 +25,7 @@ const Supporting = () => {
                 <Text style={styles.textContent}>Importez les documents ci-dessous, puis soumettez-les à nouveau.</Text>
                 <Text style={styles.textSpTitle}>{name}</Text>
                 <Text style={[styles.textContent, styles.mgBtn8]}>{'< 3 mois'}</Text>
-                <ImageUploader images={images} onChangeImages={setImages}  showAddButton={canAddMore} />
+                <ImageUploader images={images} onChangeImages={setImages} showAddButton={canAddMore} />
             </View>
             <View style={styles.viewBtn}>
                 <Button text={'Envoyer'} onPress={() => navigation.goBack()} />
