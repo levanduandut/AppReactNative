@@ -5,3 +5,4 @@ export { default as Tag } from './Tag';
 export { default as Header } from './Header';
 export { default as RadioBox } from './RadioBox';
 export { default as HeaderClose } from './HeaderClose';
+export { default as ImageUploader } from './ImageUploader';

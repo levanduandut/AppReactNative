@@ -24,7 +24,7 @@ const OnGoing = () => {
     const bottomSheetRef = useRef<BottomSheet>(null);
     const snapPoints = useMemo(() => ['50%', '75%'], []);
     const progress = useRef(new Animated.Value(0)).current;
-    const [estimatedTime, setEstimatedTime] = useState(26);
+    const [estimatedTime, setEstimatedTime] = useState<number>(26);
 
 
     const handleSheetChanges = useCallback((index: number) => {

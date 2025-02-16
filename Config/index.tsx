@@ -28,6 +28,9 @@ const Config: SrcConfig = {
             ic_call: require("./image/ic_call.png"),
             ic_note: require("./image/ic_note.png"),
             ic_next_detail: require("./image/ic_next_detail.png"),
+            ic_plus: require("./image/ic_plus.png"),
+            ic_down: require("./image/ic_down.png"),
+            ic_close_square: require("./image/ic_close_square.png"),
         },
         Role: {
             role_institution: require("./image/role_institution.png"),
@@ -63,6 +66,9 @@ const Config: SrcConfig = {
             ic_close: require("./image/info_close.png"),
             ic_progress: require("./image/ic_progress.png"),
             ic_separator: require("./image/ic_separator.png"),
+        },
+        SignUp: {
+            ic_bulding: require("./image/ic_building.png"),
         }
     },
 }

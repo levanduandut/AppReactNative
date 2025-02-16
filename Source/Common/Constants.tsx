@@ -46,7 +46,8 @@ export const Screen = {
     FindInter: "FindInter" as const,
     OnGoing: "OnGoing" as const,
     ProfileInter: "ProfileInter" as const,
-    OnGoingMap: "OnGoingMap" as const
+    OnGoingMap: "OnGoingMap" as const,
+    SignUp: "SignUp" as const
 };
 
 export default {

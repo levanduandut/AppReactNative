@@ -26,6 +26,9 @@ export interface SrcConfig {
             ic_call: ImageSourcePropType
             ic_note: ImageSourcePropType
             ic_next_detail: ImageSourcePropType
+            ic_plus: ImageSourcePropType
+            ic_close_square: ImageSourcePropType
+            ic_down: ImageSourcePropType
         }
         Role: {
             role_institution: ImageSourcePropType
@@ -61,6 +64,9 @@ export interface SrcConfig {
             ic_close: ImageSourcePropType,
             ic_progress: ImageSourcePropType
             ic_separator: ImageSourcePropType
+        }
+        SignUp: {
+            ic_bulding: ImageSourcePropType
         }
     }
 }

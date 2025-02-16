@@ -16,7 +16,7 @@ const OnGoing = () => {
     const navigation = useNavigation<any>();
     const route = useRoute<RouteProp<{ params: RouteParams }, 'params'>>();
     const { description, language = [] } = route.params || {};
-    const [modalVisible, setModalVisible] = useState(false);
+    const [modalVisible, setModalVisible] = useState<boolean>(false);
     const [loadingSuccess, setLoadingSuccess] = useState<boolean>(false);
     const progressAnim = useRef(new Animated.Value(0)).current;
 

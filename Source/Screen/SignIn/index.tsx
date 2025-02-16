@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import {Image, Text, TouchableOpacity, View } from "react-native"
+import { Image, Text, TouchableOpacity, View } from "react-native"
 import styles from "./styles"
 import Constants, { TYPEROLE } from "base-common/Constants"
 import languages from "../../../Config/languages"
@@ -12,12 +12,12 @@ import { SafeAreaView } from "react-native-safe-area-context"
 const SignIn = ({ route }: { route: any }) => {
   const type = route?.params?.type || TYPEROLE.INSTITUTION
   const navigation = useNavigation<any>();
-  const [isCheked, setIsChecked] = useState(false)
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
-  const [errEmail, setErrEmail] = useState("");
-  const [errPassword, setErrPassword] = useState("");
+  const [isCheked, setIsChecked] = useState<boolean>(false)
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const [errEmail, setErrEmail] = useState<string>("");
+  const [errPassword, setErrPassword] = useState<string>("");
 
   const SocialLoginButtons = () => {
     return (
@@ -61,7 +61,7 @@ const SignIn = ({ route }: { route: any }) => {
         password === institutionAccount.password
       ) {
         Global.isLogin = true;
-        navigation.navigate(Constants.Screen.Home, {type: TYPEROLE.INSTITUTION});
+        navigation.navigate(Constants.Screen.Home, { type: TYPEROLE.INSTITUTION });
       } else {
         setErrPassword(languages.get("signin.password.error"));
       }
@@ -71,7 +71,7 @@ const SignIn = ({ route }: { route: any }) => {
         password === interpreterAccount.password
       ) {
         Global.isLogin = true;
-        navigation.navigate(Constants.Screen.Home, {type: TYPEROLE.INTERPRETER});
+        navigation.navigate(Constants.Screen.Home, { type: TYPEROLE.INTERPRETER });
       } else {
         setErrPassword(languages.get("signin.password.error"));
       }
@@ -130,7 +130,9 @@ const SignIn = ({ route }: { route: any }) => {
       </View>
       <View style={styles.viewBtn}>
         <Button text={languages.get("signin.login")} onPress={() => onClickLogin(type)} />
-        <Text style={styles.textRegister}>{languages.get("signin.register")}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate(Constants.Screen.SignUp, { type })}>
+          <Text style={styles.textRegister}>{languages.get("signin.register")}</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
