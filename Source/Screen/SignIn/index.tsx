@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { memo, useEffect, useState } from "react"
 import { Image, Text, TouchableOpacity, View } from "react-native"
 import styles from "./styles"
 import Constants, { TYPEROLE } from "base-common/Constants"
@@ -19,24 +19,18 @@ const SignIn = ({ route }: { route: any }) => {
   const [errEmail, setErrEmail] = useState<string>("");
   const [errPassword, setErrPassword] = useState<string>("");
 
-  const SocialLoginButtons = () => {
+  const SocialLoginButtons = memo(() => {
     return (
       <View style={styles.containerBtn}>
         <TouchableOpacity style={styles.button}>
-          <Image
-            source={Config.Icon.SignIn.ic_signin_google}
-            style={styles.iconBtn}
-          />
+          <Image source={Config.Icon.SignIn.ic_signin_google} style={styles.iconBtn} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Image
-            source={Config.Icon.SignIn.ic_signin_apple}
-            style={styles.iconBtn}
-          />
+          <Image source={Config.Icon.SignIn.ic_signin_apple} style={styles.iconBtn} />
         </TouchableOpacity>
       </View>
     );
-  };
+  });
 
   useEffect(() => {
 
