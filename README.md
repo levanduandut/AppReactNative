@@ -30,7 +30,7 @@ yarn -> yarn start -> yarn android
 - Gmail: a@gmail.com
 - Password: 123456
 
-#### Role Institution
+#### Role Interpreter
 
 - Gmail: b@gmail.com
 - Password: 123456
